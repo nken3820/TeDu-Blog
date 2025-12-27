@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TeDuBlog.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa33fdb7271f0ce485395cc5dcfe625d0db6cfb9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0f9372b054657785b8df338437ab816dfc3941c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TeDuBlog.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TeDuBlog.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

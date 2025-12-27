@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZapN6+tFX2cnJBu17m8ThAe6CQnofLdBOaOIFhHwRBBNAsJCEkRUEL4TG+ech9B4g3AaaqU+410sjqdDR3F4wg==",
+  "dgSpecHash": "dVPzHOIWMmdM4pUX/nU+ULnRB+1zgipvSdvfo3d9ZLqloV6UJPfuHsDRX5JTd/jUx5soJIIzwB0aX6StirqhOQ==",
   "success": true,
-  "projectFilePath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Api/TeDuBlog.Api.csproj",
+  "projectFilePath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Api/TeDuBlog.Api.csproj",
   "expectedPackageFiles": [
     "/home/irt/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/irt/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

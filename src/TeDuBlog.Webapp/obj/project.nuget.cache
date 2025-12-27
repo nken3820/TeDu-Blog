@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cy3jazw7JGJm/hcb3oI5dtYY0Ed5+zpDCML/t9w2yGGvQTa8AfHMI48m8lyb9/HYUtMsC2LFfKq9R+xaaet73A==",
+  "dgSpecHash": "Z2/5F8rwjYPC88fyHKOl9YrPjryvNYIQGxlT0DJpSfwnJ2SrHp+AyBVBQggZBbwQ8c+Qk/Zs3Xmo6WJ3I5u4ng==",
   "success": true,
-  "projectFilePath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Webapp/TeDuBlog.Webapp.csproj",
+  "projectFilePath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Webapp/TeDuBlog.Webapp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

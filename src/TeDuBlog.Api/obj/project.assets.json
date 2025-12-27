@@ -3705,11 +3705,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Api/TeDuBlog.Api.csproj",
+      "projectUniqueName": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Api/TeDuBlog.Api.csproj",
       "projectName": "TeDuBlog.Api",
-      "projectPath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Api/TeDuBlog.Api.csproj",
+      "projectPath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Api/TeDuBlog.Api.csproj",
       "packagesPath": "/home/irt/.nuget/packages/",
-      "outputPath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Api/obj/",
+      "outputPath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/irt/.nuget/NuGet/NuGet.Config"
@@ -3724,11 +3724,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj": {
-              "projectPath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj"
+            "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj": {
+              "projectPath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj"
             },
-            "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Data/TeDuBlog.Data.csproj": {
-              "projectPath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Data/TeDuBlog.Data.csproj"
+            "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Data/TeDuBlog.Data.csproj": {
+              "projectPath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Data/TeDuBlog.Data.csproj"
             }
           }
         }

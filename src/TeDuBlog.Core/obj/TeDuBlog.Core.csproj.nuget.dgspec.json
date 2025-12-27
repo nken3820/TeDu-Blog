@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj": {}
+    "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj": {}
   },
   "projects": {
-    "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj": {
+    "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj",
+        "projectUniqueName": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj",
         "projectName": "TeDuBlog.Core",
-        "projectPath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj",
+        "projectPath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/TeDuBlog.Core.csproj",
         "packagesPath": "/home/irt/.nuget/packages/",
-        "outputPath": "/mnt/e/develop/C shape/CMS/src/TeDuBlog.Core/obj/",
+        "outputPath": "/home/irt/develop/CSharp/CMS/src/TeDuBlog.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/irt/.nuget/NuGet/NuGet.Config"
