@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TeDuBlog.Api;
 using TeDuBlog.Core.Identity.Content;
+using TeDuBlog.Core.Models.Content;
 using TeDuBlog.Core.Repositories;
 using TeDuBlog.Core.SeedWorks;
 using TeDuBlog.Data;
@@ -59,6 +60,8 @@ foreach(var service in services)
         builder.Services.Add(new ServiceDescriptor(directInterface, service, ServiceLifetime.Scoped));
     }
 }
+
+builder.Services.AddAutoMapper(typeof(PostInListDto));
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
