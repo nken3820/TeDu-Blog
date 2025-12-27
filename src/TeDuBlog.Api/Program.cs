@@ -2,8 +2,10 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TeDuBlog.Api;
 using TeDuBlog.Core.Identity.Content;
+using TeDuBlog.Core.Repositories;
 using TeDuBlog.Core.SeedWorks;
 using TeDuBlog.Data;
+using TeDuBlog.Data.Repositories;
 using TeDuBlog.Data.SeedWorks;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,6 +44,21 @@ builder.Services.Configure<IdentityOptions>(options =>
 // Add services to the container.
 builder.Services.AddScoped(typeof(IRepository<,>), typeof(RepositoryBase<,>));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Business services and repositories
+var services = typeof(PostRepository).Assembly.GetTypes()
+                    .Where(x => x.GetInterfaces().Any( i => i.Name == typeof(IRepository<,>).Name)
+                    && !x.IsAbstract && x.IsClass && !x.IsGenericType);
+
+foreach(var service in services)
+{
+    var allInterfaces = service.GetInterfaces();
+    var directInterface = allInterfaces.Except(allInterfaces.SelectMany(t => t.GetInterfaces())).FirstOrDefault();
+    if(directInterface != null)
+    {
+        builder.Services.Add(new ServiceDescriptor(directInterface, service, ServiceLifetime.Scoped));
+    }
+}
 
 // Swagger
 builder.Services.AddEndpointsApiExplorer();

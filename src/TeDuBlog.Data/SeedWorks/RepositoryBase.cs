@@ -7,9 +7,11 @@ namespace TeDuBlog.Data.SeedWorks
     public class RepositoryBase<T, TKey> : IRepository<T, TKey> where T : class
     {
         private readonly DbSet<T> _dbSet;
+        protected readonly TeDuBlogContext _context;
         public RepositoryBase(TeDuBlogContext context)
         {
             _dbSet = context.Set<T>();
+            _context = context;
         }
         public void Add(T entity)
         {
