@@ -1,5 +1,7 @@
+using System.Reflection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using TeDuBlog.Api;
 using TeDuBlog.Core.Identity.Content;
 using TeDuBlog.Core.Models.Content;
@@ -64,8 +66,20 @@ foreach(var service in services)
 builder.Services.AddAutoMapper(typeof(PostInListDto));
 
 // Swagger
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.CustomOperationIds(apiDesc =>
+    {
+        return apiDesc.TryGetMethodInfo(out MethodInfo methodInfo) ? methodInfo.Name : null;
+    });
+    c.SwaggerDoc("AdminAPI", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Version = "v1",
+        Title = "API for Administrators",
+    });
+});
 
 var app = builder.Build();
 
@@ -73,12 +87,18 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("AdminAPI/swagger.json", "Admin API");
+        c.DisplayOperationId();
+        c.DisplayRequestDuration();
+    });
 
     // Auto migrate + seed
     await app.MigrateDatabaseAsync();
 }
 
 app.UseHttpsRedirection();
+app.MapControllers();
 
 app.Run();
